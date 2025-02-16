@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
+
+html {
+  font-size: 62%;
+}
+
+body {
+  background-image: url("./../images/pexels-steve-29506613.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+}
+
+.container {
+  background: rgb(232, 232, 232);
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 50rem;
+  gap: 2.4rem;
+  padding: 4rem 2rem;
+  border-radius: 3.2rem;
+
+  &__title {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  &__horarios {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(0, 18rem));
+    gap: 1.6rem;
+    padding: 0 2rem;
+    list-style: none;
+
+    &-botao {
+      background-color: darkseagreen;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 1.8rem;
+      font-weight: 600;
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      border-radius: 1.4rem;
+      &:hover {
+        transition: 200ms;
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      &--red {
+        background-color: #e25242;
+      }
+      &--orange {
+        background-color: #f18654;
+      }
+
+      &--yellow {
+        background-color: #f1dd6b;
+      }
+    }
+  }
+
+  &__botao--desconectar {
+    background-color: #d2665a;
+    color: white;
+    font-size: 1.8rem;
+    align-self: center;
+    max-width: 18rem;
+    width: 55%;
+    padding: 1.4rem;
+    border: none;
+    border-radius: 2rem;
+    &:hover {
+      transition: 200ms;
+      cursor: pointer;
+      opacity: 0.9;
+    }
+  }
+  &__footer {
+    font-size: 1.5rem;
+    text-align: center;
+    & b {
+      color: rgb(10, 63, 10);
+      &:hover {
+        transition: 200ms;
+        opacity: 0.7;
+        cursor: pointer;
+      }
+    }
+  }
+}
